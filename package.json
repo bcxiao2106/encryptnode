@@ -1,0 +1,24 @@
+{
+  "name": "encryptnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcxiao2106/encryptnode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcxiao2106/encryptnode/issues"
+  },
+  "homepage": "https://github.com/bcxiao2106/encryptnode#readme",
+  "dependencies": {
+    "@types/crypto-js": "^4.2.1",
+    "crypto-js": "^4.2.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
