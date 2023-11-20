@@ -9,7 +9,7 @@ if(text.indexOf('access_token=') > -1) {
     tokens = AES.encrypt(text, KEY).toString()
 }
 
-console.log(tokens);
+console.log(tokens, 'aasasasasasa');
 
 function extractTokens(orginal) {
     let tokens = [];
