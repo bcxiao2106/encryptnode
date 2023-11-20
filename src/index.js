@@ -2,7 +2,13 @@ const prompt = require('prompt-sync')();
 var AES = require('crypto-js/aes');
 var KEY = 'ayden';
 var text = prompt('Please input plaintext here: ');
-var tokens = extractTokens(text);
+var tokens = '';
+if(text.indexOf('access_token=') > -1) {
+    tokens = extractTokens(text);
+} else {
+    tokens = AES.encrypt(text, KEY).toString()
+}
+
 console.log(tokens);
 
 function extractTokens(orginal) {
